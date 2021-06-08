@@ -52,6 +52,7 @@ body {
     position:relative;
     width:75%;
     height:100%;
+    background-color:#E3E2DD;
 }
 
 #row-column-wrapper {
@@ -64,6 +65,7 @@ body {
 
     border-right:1px solid grey;
     border-bottom:1px solid grey;
+    background-color: #FAF5F5;
 }
 
 .cells {
@@ -142,7 +144,7 @@ tr, td {
     width:25%;
     height:100vh;
 
-    background-color:#E3E2DD;
+    background-color:#D6D6D6;
     border-left:1px solid grey;
     
     display:flex;

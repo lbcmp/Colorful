@@ -174,7 +174,6 @@ function cellEventListeners(element) {
 
     element.addEventListener("mousedown", function() {
         if (color) {
-            //Is this necessary?
             element.style.backgroundColor = color;
             dragAndDraw = true;
         }
@@ -228,6 +227,7 @@ for (let i = 0; i < dropdownColors.length; ++i) {
         color = dropdownColor.innerHTML;
         erase(true);
         colorSelectorButton.style.backgroundColor = color;
+        colorSelectorButton.style.color = "Black";
 
         if (color == "Black") {
             colorSelectorButton.style.color = "White";
