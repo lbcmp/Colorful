@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+        <title>Colorful</title>
+    </head>
+
+<!--
+As a user, I can:
+    - add rows to the grid
+    - add columns to the grid
+    - remove rows from the grid
+    - remove columns from the grid
+    - select a color from a dropdown menu of colors
+    - click on a single cell, changing its color to the currently selected color
+    - fill all uncolored cells with the currently selected color
+    - fill all cells with the currently selected color
+    - clear all cells/restore all cells to their original/initial color
+    - click and hold (mouseover) from a single cell (start) to a different cell 
+    (end) such that all affected/hovered-over cells from start to end change 
+    to the currently selected color
+Grading criteria:
+    - Code has a comment that notes/documentation on which problem/feature the 
+    particular function is attempting to solve
+    - All solutions should explicitly fulfill the requirements noted in each problem.
+    - 25 commits
+    - 3 branches
+    - 5 issues
+-->
+    <body>
+        <main id="page-wrapper">
+            <div id="cell-wrapper">
+                <div id="row-column-wrapper">
+                    <table class="cells" cellspacing="0"></table>
+                </div>
+                <div id="columns">
+                    <p>Add/Remove Columns</p>
+                    <button id="add-column">+</button>
+                    <button id="remove-column">-</button>
+                </div>
+
+                <div id="rows">
+                    <p>Add/Remove Rows</p>
+                    <button id="add-row">+</button>
+                    <button id="remove-row">-</button>
+                </div>
+            </div>
+
+            <div id="user-menu">
+                <section id="dropdown-wrapper">
+                    <button id="color-selector">Choose a Color</button>
+                    <div id="dropdown-content">
+                        <ul id="list-of-colors">
+                            <li>Red</li>
+                            <li>LightCoral</li>
+                            <li>Pink</li>
+                            <li>Violet</li>
+                            <li>Purple</li>
+                            <li>Blue</li>
+                            <li>CadetBlue</li>
+                            <li>Teal</li>
+                            <li>Green</li>
+                            <li>DarkSeaGreen</li>
+                            <li>Aqua</li>
+                            <li>Yellow</li>
+                            <li>Orange</li>
+                            <li>Brown</li>
+                            <li>Tan</li>
+                            <li>BurlyWood</li>
+                            <li>Grey</li>
+                            <li>Black</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="other-buttons">
+                    <button id="eraser">Eraser: OFF</button>
+                        <div class="extra-info">Toggle eraser</div>
+                    <button id="fill-uncolored">Fill Uncolored Cells</button>
+                        <div class="extra-info"><p>Fill all uncolored cells with selected color</p></div>
+                    <button id="fill-all">Fill All Cells</button>
+                        <div class="extra-info"><p>Fill all cells- colored or uncolored– with selected color</p></div>
+                    <button id="clear-colors">Clear Colors</button>
+                        <div class="extra-info">Clear the color from all cells</div>
+                    <button id="clear-cells">Clear Everything</button>
+                        <div class="extra-info"><p>Clear all cells and restore to default</p></div>
+                </section>
+
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
