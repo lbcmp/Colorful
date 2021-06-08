@@ -159,7 +159,7 @@ tr, td {
 
 #dropdown-wrapper {
     width:100%;
-    height:30%;
+    height:250px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -193,11 +193,11 @@ tr, td {
 
 #other-buttons {
     width:100%;
-    height:70%;
+    height:calc(100vh - 275px);
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-bottom:20px;
 }
 
@@ -230,7 +230,15 @@ tr, td {
     border:3px solid blue;
 }
 
-.extra-info {
+.button-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-info p {
+    margin-top:4px;
     font-size: 0.75rem;
     text-align: center;
     color:#51514E;
